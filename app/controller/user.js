@@ -5,4 +5,18 @@ module.exports = class UserController extends Controller {
     const { id } = ctx.query
     ctx.body = await ctx.model.User.findById(id)
   }
+
+  async attend (ctx) {
+    const { userId, attend, phone } = ctx.request.body
+    ctx.body = await ctx.model.User.findByIdAndUpdate(userId, {
+      attend, phone
+    }, { new: true })
+  }
+
+  async gift (ctx) {
+    const { userId, gift, wishes } = ctx.request.body
+    ctx.body = await ctx.model.User.findByIdAndUpdate(userId, {
+      gift, wishes
+    }, { new: true })
+  }
 }

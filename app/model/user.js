@@ -4,8 +4,10 @@ module.exports = app => {
   return model('user', new Schema({
     _id: String,
     name: String,
-    // pwd: String,
-    // avatar: String,
+    attend: String,
+    phone: String,
+    gift: String,
+    wishes: String,
   }, {
     typeKey: '$type',
     timestamps: true,
