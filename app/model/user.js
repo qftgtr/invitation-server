@@ -4,6 +4,7 @@ module.exports = app => {
   return model('user', new Schema({
     _id: String,
     name: String,
+    gender: String,
     attend: String,
     phone: String,
     party: String,
