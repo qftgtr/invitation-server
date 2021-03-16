@@ -18,15 +18,15 @@ module.exports = appInfo => {
   // config.ipHeaders = 'X-Forwarded-For'
 
   config.siteFile = {
-    '/favicon.ico': fs.readFileSync(path.join(__dirname, '../app/public/favicon.ico'))
+    // '/favicon.ico': fs.readFileSync(path.join(__dirname, '../app/public/favicon.ico'))
   }
 
-  config.static = {
-    dir: [
-      { prefix: '/', dir: path.join(appInfo.baseDir, 'app/public') }
-    ],
-    gzip: true
-  }
+  // config.static = {
+  //   dir: [
+  //     { prefix: '/', dir: path.join(appInfo.baseDir, 'app/public') }
+  //   ],
+  //   gzip: true
+  // }
 
   let domainWhiteList = []
   if (process.env.REDIRECT_WHITELIST) {
