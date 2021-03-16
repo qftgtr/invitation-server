@@ -6,6 +6,7 @@ module.exports = app => {
 
   router.get('/api/v1/user', controller.user.show)
   router.post('/api/v1/attend', controller.user.attend)
+  router.post('/api/v1/party', controller.user.party)
   router.post('/api/v1/gift', controller.user.gift)
 }
 

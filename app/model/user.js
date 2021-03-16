@@ -6,6 +6,7 @@ module.exports = app => {
     name: String,
     attend: String,
     phone: String,
+    party: String,
     gift: String,
     wishes: String,
   }, {
