@@ -7,6 +7,7 @@ module.exports = app => {
     gender: String,
     attend: String,
     phone: String,
+    noParty: Boolean,
     party: String,
     gift: String,
     wishes: String,
